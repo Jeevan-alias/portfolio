@@ -635,6 +635,15 @@ var animateReveal = function() {
 
 		});
 	}
+	// Remove overlay and loader after page fully loads
+window.addEventListener("load", function () {
+  const overlay = document.getElementById("unslate_co--overlayer");
+  const loaderWrap = document.querySelector(".site-loader-wrap");
+
+  if (overlay) overlay.style.display = "none";
+  if (loaderWrap) loaderWrap.style.display = "none";
+});
+
 
 	// gsap reveal hero
 	$('.gsap-reveal-hero').each(function() {

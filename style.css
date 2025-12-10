@@ -2095,3 +2095,9 @@ span.error {
 .gsap-reveal-img .reveal-wrap .reveal-content .portfolio-item-content h3 {
   margin-bottom: 10px;
 }
+
+#unslate_co--overlayer,
+.site-loader-wrap {
+    pointer-events: none !important;
+}
+
